@@ -73,40 +73,26 @@ if (priceRows.length > 0 && desktopPreviewImg) {
 import heroImg1 from './hero-img-1.jpg';
 import heroImg2 from './hero-img-2.jpg';
 import heroImg3 from './hero-img-3.jpg';
-import heroImg4 from './hero-img-4.jpg';
-import heroImg5 from './hero-img-5.jpg';
 
 import heroBg1 from './hero-bg-1.jpg';
 import heroBg2 from './hero-bg-2.jpg';
 import heroBg3 from './hero-bg-3.jpg';
-import heroBg4 from './hero-bg-4.jpg';
-import heroBg5 from './hero-bg-5.jpg';
 
 const heroSlides = [
   {
     photoImage: heroImg1, bgImage: heroBg1,
-    label: "Portrait",
-    alt: "Portrait photo in frame"
+    label: "Baby Krishna",
+    alt: "Baby Krishna photo in frame"
   },
   {
     photoImage: heroImg2, bgImage: heroBg2,
-    label: "Wedding",
-    alt: "Wedding photo in frame"
+    label: "Udanpirape",
+    alt: "Friends photo in frame"
   },
   {
     photoImage: heroImg3, bgImage: heroBg3,
-    label: "Family",
-    alt: "Family photo in frame"
-  },
-  {
-    photoImage: heroImg4, bgImage: heroBg4,
-    label: "Couple",
-    alt: "Couple photo in frame"
-  },
-  {
-    photoImage: heroImg5, bgImage: heroBg5,
     label: "Memories",
-    alt: "Beautiful memory in frame"
+    alt: "Baby collage photo in frame"
   }
 ];
 
