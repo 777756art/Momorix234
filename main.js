@@ -70,29 +70,41 @@ if (priceRows.length > 0 && desktopPreviewImg) {
    CINEMATIC HERO SLIDER LOGIC
    ================================================== */
    
+import heroImg1 from './hero-img-1.jpg';
+import heroImg2 from './hero-img-2.jpg';
+import heroImg3 from './hero-img-3.jpg';
+import heroImg4 from './hero-img-4.jpg';
+import heroImg5 from './hero-img-5.jpg';
+
+import heroBg1 from './hero-bg-1.jpg';
+import heroBg2 from './hero-bg-2.jpg';
+import heroBg3 from './hero-bg-3.jpg';
+import heroBg4 from './hero-bg-4.jpg';
+import heroBg5 from './hero-bg-5.jpg';
+
 const heroSlides = [
   {
-    photoImage: "./hero-img-1.jpg",
+    photoImage: heroImg1, bgImage: heroBg1,
     label: "Portrait",
     alt: "Portrait photo in frame"
   },
   {
-    photoImage: "./hero-img-2.jpg",
+    photoImage: heroImg2, bgImage: heroBg2,
     label: "Wedding",
     alt: "Wedding photo in frame"
   },
   {
-    photoImage: "./hero-img-3.jpg",
+    photoImage: heroImg3, bgImage: heroBg3,
     label: "Family",
     alt: "Family photo in frame"
   },
   {
-    photoImage: "./hero-img-4.jpg",
+    photoImage: heroImg4, bgImage: heroBg4,
     label: "Couple",
     alt: "Couple photo in frame"
   },
   {
-    photoImage: "./hero-img-5.jpg",
+    photoImage: heroImg5, bgImage: heroBg5,
     label: "Memories",
     alt: "Beautiful memory in frame"
   }
@@ -113,7 +125,7 @@ if (heroBgContainer) {
     heroSlides.forEach((slide, index) => {
         // Create Full Background Image (Desktop)
         const img = document.createElement('img');
-        img.src = slide.photoImage.replace('hero-img-', 'hero-bg-'); 
+        img.src = slide.bgImage; 
         img.alt = slide.alt;
         img.className = 'hero-bg-image';
         if (index === 0) img.classList.add('active');
