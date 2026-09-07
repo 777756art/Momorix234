@@ -77,83 +77,28 @@ let slideInterval;
 const SLIDE_DURATION = 5000;
 
 if (heroBgContainer) {
-    
-    // 1. Initialize DOM from Data Array
-    heroSlides.forEach((slide, index) => {
-        // Create Full Background Image (Desktop)
-        const img = document.createElement('img');
-        img.src = slide.bgImage; 
-        img.alt = slide.alt;
-        img.className = 'hero-bg-image';
-        if (index === 0) img.classList.add('active');
-        heroBgContainer.appendChild(img);
-        
-        // Create Mobile Inner Image
-        if (mobilePhotoContainer) {
-            const mImg = document.createElement('img');
-            mImg.src = slide.photoImage; // Use raw photo for inner frame
-            mImg.alt = slide.alt;
-            if (index === 0) mImg.classList.add('active');
-            // Insert before glass reflection
-            const reflection = mobilePhotoContainer.querySelector('.glass-reflection');
-            mobilePhotoContainer.insertBefore(mImg, reflection);
-        }
-        
-        // Create Mobile Thumbnail
-        if (mobileThumbnailsContainer) {
-            const mBtn = document.createElement('button');
-            mBtn.className = 'mobile-thumb-btn';
-            if (index === 0) mBtn.classList.add('active');
-            
-            const mThumbImg = document.createElement('img');
-            mThumbImg.src = slide.photoImage;
-            mThumbImg.alt = slide.label + ' Preview';
-            mBtn.appendChild(mThumbImg);
-            
-            mBtn.addEventListener('click', () => {
-                goToSlide(index);
-                resetAutoplay();
-            });
-            
-            mobileThumbnailsContainer.appendChild(mBtn);
-        }
-    });
-    
+    // 1. Use static images already in HTML
     const photos = document.querySelectorAll('.hero-bg-image');
-    let mPhotos = [];
-    if (mobilePhotoContainer) {
-        mPhotos = Array.from(mobilePhotoContainer.querySelectorAll('img'));
-    }
-    const mButtons = document.querySelectorAll('.mobile-thumb-btn');
-    
+    const totalSlides = photos.length;
+
     // 2. Navigation & Transition Logic
     function goToSlide(index) {
         if (index === currentSlideIndex) return;
-        
         const prevIndex = currentSlideIndex;
         currentSlideIndex = index;
-        
-        // Transition Desktop Photos
-        if (photos.length > 0) {
-            photos[prevIndex].classList.remove('active');
-            photos[currentSlideIndex].classList.add('active');
-        }
-        
-        // Transition Mobile Photos
-        if (mPhotos.length > 0) {
-            mPhotos[prevIndex].classList.remove('active');
-            mPhotos[currentSlideIndex].classList.add('active');
-        }
-        
-        // Update Mobile Thumbnails
-        if (mButtons.length > 0) {
-            mButtons[prevIndex].classList.remove('active');
-            mButtons[currentSlideIndex].classList.add('active');
-        }
+
+        // Remove active + restart Ken Burns by cloning
+        photos[prevIndex].classList.remove('active');
+        // Force animation restart on new active slide
+        const next = photos[currentSlideIndex];
+        next.style.animation = 'none';
+        next.offsetHeight; // trigger reflow
+        next.style.animation = '';
+        next.classList.add('active');
     }
-    
+
     function nextSlide() {
-        let nextIndex = (currentSlideIndex + 1) % heroSlides.length;
+        let nextIndex = (currentSlideIndex + 1) % totalSlides;
         goToSlide(nextIndex);
     }
 
