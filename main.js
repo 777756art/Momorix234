@@ -54,7 +54,7 @@ const desktopPreviewImg = document.getElementById('desktop-frame-preview');
 if (priceRows.length > 0 && desktopPreviewImg) {
     priceRows.forEach(row => {
         row.addEventListener('mouseenter', () => {
-            const previewSrc = row.getAttribute('data-preview');
+            const previewSrc = row.querySelector(".row-thumb").src;
             if (previewSrc) {
                 desktopPreviewImg.style.opacity = '0';
                 setTimeout(() => {
