@@ -70,36 +70,11 @@ if (priceRows.length > 0 && desktopPreviewImg) {
    CINEMATIC HERO SLIDER LOGIC
    ================================================== */
    
-import heroImg1 from './hero-img-1.jpg';
-import heroImg2 from './hero-img-2.jpg';
-import heroImg3 from './hero-img-3.jpg';
-
-const heroSlides = [
-  {
-    photoImage: heroImg1, bgImage: heroImg1,
-    label: "Baby Krishna",
-    alt: "Baby Krishna photo in frame"
-  },
-  {
-    photoImage: heroImg2, bgImage: heroImg2,
-    label: "Udanpirape",
-    alt: "Friends photo in frame"
-  },
-  {
-    photoImage: heroImg3, bgImage: heroImg3,
-    label: "Memories",
-    alt: "Baby collage photo in frame"
-  }
-];
-
+// Hero Slider - transitions the static images already in HTML
 const heroBgContainer = document.getElementById('hero-bg-container');
-const mobilePhotoContainer = document.getElementById('mobile-photo-container');
-const mobileThumbnailsContainer = document.getElementById('mobile-thumbnails');
-
 let currentSlideIndex = 0;
 let slideInterval;
 const SLIDE_DURATION = 5000;
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (heroBgContainer) {
     
