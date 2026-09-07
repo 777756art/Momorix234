@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memorix Frames | Memories Made to Gift</title>
+  <meta name="description" content="Turn a special photograph into a frame they'll always remember. Memorix Frames is an elegant photo studio and crafted frame atelier based in Erode, Tamil Nadu." />
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- 1. Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" style="display: flex; align-items: center; justify-content: center; width: 54px; height: 54px;">
+        <img src="/assets/logo_clean.png" alt="Memorix Frames" style="height: 100%; width: 100%; object-fit: contain;">
+      </a>
+      <nav class="main-nav">
+        <a href="/" class="nav-text active">Home</a>
+        <a href="#frames" class="nav-text">Frames</a>
+        <a href="#occasions" class="nav-text">Occasions</a>
+        <a href="#about" class="nav-text">About</a>
+        <a href="#contact" class="nav-text">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://www.instagram.com/_memorix___/" target="_blank" rel="noopener noreferrer" style="color: var(--color-text); margin-right: 1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <button class="menu-close-btn" id="menu-close-btn" aria-label="Close Menu">✕</button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="/" class="mobile-nav-link active">Home</a>
+      <a href="#frames" class="mobile-nav-link">Frames</a>
+      <a href="#occasions" class="mobile-nav-link">Occasions</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="https://www.instagram.com/_memorix___/" class="mobile-nav-link" target="_blank">Instagram</a>
+      <a href="https://wa.me/+916382911745" class="btn btn-primary" style="margin-top: 2rem;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        WhatsApp Us
+      </a>
+    </nav>
+  </div>
+
+  <!-- 2. Hero - Cinematic Showcase -->
+  <section class="luxury-hero" id="home">
+    <!-- Dynamic Background Images Injected Here -->
+    <div class="hero-bg-container" id="hero-bg-container">
+       <!-- Images injected by JS -->
+    </div>
+    <div class="hero-bg-overlay"></div> <!-- Dark overlay for text readability -->
+    
+    <div class="container luxury-hero-inner">
+      <!-- LEFT SIDE -->
+      <div class="hero-text-content">
+        <p class="hero-eyebrow hero-load-anim">Photo Frames <span class="sep">|</span> Gifts <span class="sep">|</span> Memories</p>
+        <h1 class="hero-heading hero-load-anim hero-delay-1">Memories Made<br>to <span class="gold-text">Gift.</span></h1>
+        <p class="hero-desc hero-load-anim hero-delay-2">Turn your favourite photograph into<br>something worth keeping.</p>
+        <div class="hero-cta-group hero-load-anim hero-delay-3">
+          <a href="#frames" class="btn btn-primary">View Frames &rarr;</a>
+          
+        </div>
+        
+      </div>
+      <!-- BOTTOM BAR CONTROLS -->
+      <div class="hero-bottom-bar">
+         <div class="scroll-indicator">
+            <svg width="24" height="36" viewBox="0 0 24 36" fill="none" stroke="currentColor" stroke-width="1.5">
+               <rect x="2" y="2" width="20" height="32" rx="10"></rect>
+               <line x1="12" y1="10" x2="12" y2="16"></line>
+            </svg>
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+         </div>
+         
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Our Frames + Price List -->
+  <section id="frames" class="section-spacing" style="border-top: 1px solid var(--color-border); position: relative; overflow: hidden;">
+    <div class="watermark-bg" style="position: absolute; top: 10%; right: -5%; font-family: var(--font-display); font-size: 15vw; font-weight: 800; color: rgba(255,255,255,0.02); pointer-events: none; z-index: 0;">FRAMES</div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-header center-content reveal-up">
+        <h2>Crafted Frames</h2>
+        <p class="muted-text" style="max-width: 400px; margin-top: 1rem; font-size: 1.125rem; margin-left: auto; margin-right: auto; text-align: center; line-height: 1.5; color: var(--color-gold); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">Hand-finished wooden frames designed to elevate your favorite moments.</p>
+      </div>
+      
+      <div class="price-list-container" style="background: rgba(20, 20, 20, 0.4); border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px);">
+        <div class="price-list-content reveal-stagger">
+          <div class="price-table">
+            <div class="price-row" data-preview="/assets/hero-bg-1.jpg">
+              <img src="/assets/hero-bg-1.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">40 &times; 60<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹4,500</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2040x60%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-2.jpg">
+              <img src="/assets/hero-bg-2.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">30 &times; 60<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹3,500</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2030x60%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-3.jpg">
+              <img src="/assets/hero-bg-3.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">50 &times; 30<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹2,500</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2050x30%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-4.jpg">
+              <img src="/assets/hero-bg-4.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">24 &times; 36<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹1,800</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2024x36%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-5.jpg">
+              <img src="/assets/hero-bg-5.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">20 &times; 30<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹1,100</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2020x30%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-1.jpg">
+              <img src="/assets/hero-bg-1.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">16 &times; 24<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹700</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2016x24%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-2.jpg">
+              <img src="/assets/hero-bg-2.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">18 &times; 12<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹400</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2018x12%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-3.jpg">
+              <img src="/assets/hero-bg-3.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">12 &times; 8<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹300</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%2012x8%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-4.jpg">
+              <img src="/assets/hero-bg-4.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">8 &times; 6<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹250</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%208x6%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+            <div class="price-row" data-preview="/assets/hero-bg-5.jpg">
+              <img src="/assets/hero-bg-5.jpg" alt="Frame preview" class="row-thumb">
+              <span class="row-size">6 &times; 4<span style="font-size: 16px; color: var(--color-text-muted); font-family: var(--font-ui);"> in</span></span>
+              <span class="price-text">₹200</span>
+              <span class="row-cta"><a href="https://wa.me/+916382911745?text=Hi%20Memorix,%20I'm%20interested%20in%20the%206x4%20frame." target="_blank" rel="noopener noreferrer" class="row-cta-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align: middle;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>Enquire</a></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="frame-preview-sticky">
+          <img src="/assets/gallery-1.jpg" alt="Frame Preview" id="desktop-frame-preview" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Frames For Every Occasion -->
+  <section id="occasions" class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2>Frames For Every Occasion</h2>
+      </div>
+      
+      <div class="occasion-editorial-list reveal-stagger">
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">01</span>
+          <span class="occ-name">Birthday</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">02</span>
+          <span class="occ-name">Wedding</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">03</span>
+          <span class="occ-name">Anniversary</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">04</span>
+          <span class="occ-name">Parents</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">05</span>
+          <span class="occ-name">Couples</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">06</span>
+          <span class="occ-name">Family</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="https://wa.me/+916382911745" target="_blank" class="occ-list-item">
+          <span class="occ-num">07</span>
+          <span class="occ-name">Friends</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+        <a href="#frames" class="occ-list-item">
+          <span class="occ-num">08</span>
+          <span class="occ-name">Shop All</span><span class="occ-arrow" style="margin-left:auto; opacity:0.5;">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Why Memorix (Bento Grid) -->
+  <section class="section-spacing" style="background-color: var(--color-background);">
+    <div class="container">
+      <div class="section-header center-content reveal-up">
+        <h2>The Memorix Difference</h2>
+      </div>
+      
+      <div class="bento-grid reveal-stagger">
+        <div class="bento-item bento-1">
+          <div class="bento-bg-accent" style="background: radial-gradient(circle at top right, rgba(212,175,55,0.15), transparent 60%);"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Premium Finish</h3>
+            <p class="bento-desc">Crafted from high-quality materials to ensure your memories are elegantly preserved. Our wood is hand-selected and finished to museum standards.</p>
+          </div>
+        </div>
+        
+        <div class="bento-item bento-2">
+          <div class="bento-content">
+            <h3 class="bento-title">Personal Photo</h3>
+            <p class="bento-desc">Printed with exceptional clarity, archival inks, and true color accuracy.</p>
+          </div>
+        </div>
+        
+        <div class="bento-item bento-3">
+          <div class="bento-content">
+            <h3 class="bento-title">Gift Ready</h3>
+            <p class="bento-desc">Delivered in beautiful, secure packaging that makes unboxing an experience itself.</p>
+          </div>
+        </div>
+        
+        <div class="bento-item bento-4">
+          <div class="bento-bg-accent" style="background: radial-gradient(circle at bottom left, rgba(255,255,255,0.05), transparent 60%);"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Made to Keep</h3>
+            <p class="bento-desc">Built with durability in mind, our frames are designed to last a lifetime. Every joint is reinforced, and every glass pane is carefully fitted.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. How to Order -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2>How It Works</h2>
+      </div>
+      
+      <div class="order-steps">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h4 style="font-family: var(--font-ui); font-weight: 600; margin-bottom: 8px;">Choose Frame</h3>
+          <p class="muted-text" style="font-size: 14px;">Select the perfect size and style from our curated collection.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h4 style="font-family: var(--font-ui); font-weight: 600; margin-bottom: 8px;">Send Photo</h3>
+          <p class="muted-text" style="font-size: 14px;">Share your high-resolution photograph with us via WhatsApp.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h4 style="font-family: var(--font-ui); font-weight: 600; margin-bottom: 8px;">We Prepare</h3>
+          <p class="muted-text" style="font-size: 14px;">We print, mount, and frame your memory with exquisite care.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h4 style="font-family: var(--font-ui); font-weight: 600; margin-bottom: 8px;">Collect/Gift</h3>
+          <p class="muted-text" style="font-size: 14px;">Pick it up from our studio or have it delivered as a thoughtful gift.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 8b. WhatsApp Proof -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2>From a Message to a Memory.</h2>
+      </div>
+      
+      <div class="wa-proof-grid">
+        <div class="wa-proof-item item-main">
+          <img src="/assets/hero-bg-1.jpg" alt="WhatsApp Customer 1" loading="lazy" style="filter: blur(2px);">
+        </div>
+        <div class="wa-proof-item item-sub1">
+          <img src="/assets/hero-bg-2.jpg" alt="WhatsApp Customer 2" loading="lazy" style="filter: blur(2px);">
+        </div>
+        <div class="wa-proof-item item-sub2">
+          <img src="/assets/hero-bg-3.jpg" alt="WhatsApp Customer 3" loading="lazy" style="filter: blur(2px);">
+        </div>
+        <div class="wa-proof-item item-sub3">
+          <img src="/assets/hero-bg-4.jpg" alt="WhatsApp Customer 4" loading="lazy" style="filter: blur(2px);">
+        </div>
+        <div class="wa-proof-item item-sub4">
+          <img src="/assets/hero-bg-5.jpg" alt="WhatsApp Customer 5" loading="lazy" style="filter: blur(2px);">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 9. About Memorix -->
+  <section id="about" class="section-spacing" style="border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container center-content">
+      <h2>A photograph captures a moment.<br>A frame gives that moment a place in someone's life.</h2>
+    </div>
+  </section>
+
+  <!-- 10. Instagram Feed -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="section-header center-content reveal-up" style="margin-bottom: 3rem;">
+        <h2>See More of Our Frames</h2>
+      </div>
+      
+      <div class="instagram-grid">
+        <a href="https://www.instagram.com/_memorix___/" target="_blank" rel="noopener noreferrer" class="ig-post">
+          <img src="/assets/frame-1.jpg" alt="Instagram Post 1" loading="lazy">
+          <div class="ig-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/_memorix___/" target="_blank" rel="noopener noreferrer" class="ig-post">
+          <img src="/assets/frame-2.jpg" alt="Instagram Post 2" loading="lazy">
+          <div class="ig-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/_memorix___/" target="_blank" rel="noopener noreferrer" class="ig-post">
+          <img src="/assets/frame-3.jpg" alt="Instagram Post 3" loading="lazy">
+          <div class="ig-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/p/Db0tyi5sbpr/" target="_blank" rel="noopener noreferrer" class="ig-post">
+          <img src="/assets/frame-6.jpg" alt="Instagram Post 4" loading="lazy">
+          <div class="ig-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/p/Dck8iC3GrH6/" target="_blank" rel="noopener noreferrer" class="ig-post">
+          <img src="/assets/frame-5.jpg" alt="Instagram Post 5" loading="lazy">
+          <div class="ig-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/p/DaAQe3LPDTc/" target="_blank" rel="noopener noreferrer" class="ig-post">
+          <img src="/assets/frame-7.jpg" alt="Instagram Post 6" loading="lazy">
+          <div class="ig-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-gold);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://www.instagram.com/_memorix___/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-pill" style="font-family: var(--font-ui); letter-spacing: 0.05em; font-size: 0.875rem;">View Instagram &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Contact & Final CTA -->
+  <section id="contact" class="section-spacing premium-contact-section">
+    <div class="erode-bg-text">ERODE</div>
+    <div class="container contact-container-inner">
+      <div class="contact-left">
+        <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 2rem;">Have a Memory?<br>Give It a Frame.</h2>
+        <p class="muted-text" style="font-size: 1.25rem; max-width: 400px; margin-bottom: 3rem;">Your favourite moment deserves a place of its own.</p>
+        
+        <div class="contact-cta-group">
+          <a href="https://wa.me/+916382911745" class="btn btn-primary" target="_blank">Start on WhatsApp &rarr;</a>
+          <a href="#" class="btn btn-outline" style="border-color: var(--color-border); color: var(--color-text);">Visit Our Store &rarr;</a>
+        </div>
+      </div>
+      
+      <div class="contact-right">
+        <div class="contact-info-block">
+          <p style="color: var(--color-gold); font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 1rem;">The Atelier</p>
+          <p style="font-family: var(--font-ui); font-size: 1.125rem;">Memorix Frames</p>
+          <a href="https://maps.app.goo.gl/XU3ZRdJvBxUHZUBh9?g_st=ac" target="_blank" rel="noopener noreferrer" class="muted-text" style="font-family: var(--font-ui); display: block; text-decoration: underline; margin-top: 0.5rem; text-decoration-color: rgba(255,255,255,0.2);">
+            View on Google Maps<br>Erode, Tamil Nadu
+          </a>
+          <p class="muted-text" style="margin-top: 1rem; font-family: var(--font-ui);">Mon-Sat, 10am - 8pm</p>
+          <p style="color: var(--color-gold); margin-top: 1rem; font-size: 1.25rem;">+91 63829 11745</p>
+          <p style="margin-top: 1rem;"><a href="https://www.instagram.com/_memorix___/" target="_blank" style="text-decoration: underline; font-family: var(--font-ui);">@_memorix___</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Footer -->
+  <footer class="site-footer">
+    <div class="container fat-footer">
+      
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom: 1rem;">MEMORIX</div>
+        <p class="muted-text">Memories made to keep.<br>Crafted in Erode.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4 style="font-family: var(--font-ui); margin-bottom: 1rem; color: var(--color-text);">Explore</h3>
+        <a href="#frames">Collection</a>
+        <a href="#about">The Studio</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <h4 style="font-family: var(--font-ui); margin-bottom: 1rem; color: var(--color-text);">Connect</h3>
+        <a href="https://www.instagram.com/_memorix___/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://wa.me/+916382911745" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="#">Directions</a>
+      </div>
+
+    </div>
+    
+    <div class="container footer-bottom">
+      <div style="font-size: 13px; color: var(--color-text-muted);">
+        &copy; <span id="year"></span> Memorix Frames. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
