@@ -74,23 +74,19 @@ import heroImg1 from './hero-img-1.jpg';
 import heroImg2 from './hero-img-2.jpg';
 import heroImg3 from './hero-img-3.jpg';
 
-import heroBg1 from './hero-bg-1.jpg';
-import heroBg2 from './hero-bg-2.jpg';
-import heroBg3 from './hero-bg-3.jpg';
-
 const heroSlides = [
   {
-    photoImage: heroImg1, bgImage: heroBg1,
+    photoImage: heroImg1, bgImage: heroImg1,
     label: "Baby Krishna",
     alt: "Baby Krishna photo in frame"
   },
   {
-    photoImage: heroImg2, bgImage: heroBg2,
+    photoImage: heroImg2, bgImage: heroImg2,
     label: "Udanpirape",
     alt: "Friends photo in frame"
   },
   {
-    photoImage: heroImg3, bgImage: heroBg3,
+    photoImage: heroImg3, bgImage: heroImg3,
     label: "Memories",
     alt: "Baby collage photo in frame"
   }
