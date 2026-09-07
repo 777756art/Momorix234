@@ -72,27 +72,27 @@ if (priceRows.length > 0 && desktopPreviewImg) {
    
 const heroSlides = [
   {
-    photoImage: "/assets/hero-img-1.jpg",
+    photoImage: "./assets/hero-img-1.jpg",
     label: "Portrait",
     alt: "Portrait photo in frame"
   },
   {
-    photoImage: "/assets/hero-img-2.jpg",
+    photoImage: "./assets/hero-img-2.jpg",
     label: "Wedding",
     alt: "Wedding photo in frame"
   },
   {
-    photoImage: "/assets/hero-img-3.jpg",
+    photoImage: "./assets/hero-img-3.jpg",
     label: "Family",
     alt: "Family photo in frame"
   },
   {
-    photoImage: "/assets/hero-img-4.jpg",
+    photoImage: "./assets/hero-img-4.jpg",
     label: "Couple",
     alt: "Couple photo in frame"
   },
   {
-    photoImage: "/assets/hero-img-5.jpg",
+    photoImage: "./assets/hero-img-5.jpg",
     label: "Memories",
     alt: "Beautiful memory in frame"
   }
